@@ -1,5 +1,21 @@
 'use strict'
 
+
+const titleDoc = document.getElementsByTagName('h1')[0];
+const handlerBtnStart = document.getElementsByClassName('handler_btn')[0];
+const handlerBtnReset = document.getElementsByClassName('handler_btn')[1];
+const buttonPlus = document.querySelector('.screen-btn');
+const inputControls = document.querySelectorAll('.other-items.percent');
+const inputControlsNumber = document.querySelectorAll('.other-items.number');
+const inputRange = document.querySelector('.rollback > div > input');
+const inputRangeSpan = document.querySelector('.rollback > div > span');
+const totalInput1 = document.getElementsByClassName('total-input')[0];
+const totalInput2 = document.getElementsByClassName('total-input')[1];
+const totalInput3 = document.getElementsByClassName('total-input')[2];
+const totalInput4 = document.getElementsByClassName('total-input')[3];
+const totalInput5 = document.getElementsByClassName('total-input')[4];
+let screenItem = document.querySelectorAll('.screen');
+
 // const appData = {
 //   title: '',
 //   screens: [],
@@ -104,27 +120,20 @@
 //   }
 // };
 
+// appData.start();
 
-const titleDoc = document.getElementsByTagName('h1');
-const handlerButton = document.getElementsByClassName('handler_btn');
-const buttonPlus = document.querySelector('.screen-btn');
-const inputControls = document.querySelectorAll('.other-items.percent');
-const inputControlsNumber = document.querySelectorAll('.other-items.number');
-const inputRange = document.querySelector('.rollback > div > input');
-const inputRangeSpan = document.querySelector('.rollback > div > span');
-const totalInput = document.getElementsByClassName('total-input');
-let screenItem = document.querySelectorAll('.screen');
 
-console.log('Заголовок:', titleDoc[0]);
-console.log('Кнопки:', handlerButton);
+console.log('Заголовок:', titleDoc);
+console.log('Кнопка рассчитать:', handlerBtnStart);
+console.log('Кнопка сброс:', handlerBtnReset); 
 console.log('Кнопка +:', buttonPlus);
 console.log('Чекбокс:', inputControls);
 console.log('Чекбокс с номером:', inputControlsNumber);
 console.log('Тип:', inputRange.getAttribute('type'));
 console.log('Процент:', inputRangeSpan);
-console.log('Все поля справа:', totalInput[0], totalInput[1], totalInput[2], totalInput[3], totalInput[4]);
+console.log('Все поля справа:', totalInput1, totalInput2, totalInput3, totalInput4, totalInput5);
 console.log('Типы экранов:', screenItem);
 
 
-// appData.start();
+
 
